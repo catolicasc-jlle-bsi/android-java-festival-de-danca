@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	tools:context=".MainActivity" 
+	android:orientation="vertical">
+	
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:id="@+id/llConteudo"
+		android:orientation="vertical"
+		>
+
+		<LinearLayout
+			android:id="@+id/llHome"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			
+		    <TextView android:id="@+id/tvCurrent"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Apresentação Atual"/>
+	
+			<RatingBar
+				android:id="@+id/ratingBar1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:id="@+id/llLista"
+			android:orientation="vertical"
+			>
+
+			<ListView
+				android:id="@+id/listaApresent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:drawSelectorOnTop="false"
+				android:textAlignment="center" >
+			</ListView>
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/llSettings"
+			android:orientation="vertical"
+			>
+
+			<ImageButton 
+				android:id="@+id/btFacebook"
+				android:layout_width="fill_parent"
+				android:layout_height="80dp"
+				android:layout_gravity="left"
+				android:src="@drawable/fb"
+				android:background="#FFFFFF"
+				/>
+			
+			<ImageButton 
+				android:id="@+id/btTwitter"
+				android:layout_width="fill_parent"
+				android:layout_height="80dp"
+				android:layout_gravity="left"
+				android:src="@drawable/twitter"
+				android:background="#FFFFFF"
+				/>
+			
+			
+		</LinearLayout>
+			
+		
+		
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/barra"
+		android:orientation="horizontal"
+		android:background="#000000"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
+		>
+		
+		<ImageButton 
+			android:id="@+id/btVotar"
+			android:layout_width="80dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.33"
+			android:layout_gravity="center"
+			android:src="@drawable/vote"
+			android:background="#000"
+		/>
+		
+		<ImageButton 
+			android:id="@+id/btVotos"
+			android:layout_width="80dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.33"
+			android:layout_gravity="center"
+			android:src="@drawable/list"
+			android:background="#000"
+		/>
+		
+		<ImageButton
+			android:id="@+id/btSettings"
+			android:layout_width="80dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.33"
+			android:layout_gravity="center"
+			android:src="@drawable/setting"
+			android:background="#000"
+		/>
+		
+	</LinearLayout>
+	
+
+
+
+</LinearLayout>
